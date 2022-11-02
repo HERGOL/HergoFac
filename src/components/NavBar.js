@@ -31,6 +31,7 @@ export const NavBar = () => {
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
   }
+  
 
   return (
     <Router>
@@ -54,8 +55,8 @@ export const NavBar = () => {
                 <a href="https://www.hergol.me/"><img src={navIcon2} alt="Hergol Website" /></a>
                 <a href="https://www.instagram.com/hergol.tech/"><img src={navIcon3} alt="Hergol Instageam" /></a>
               </div>
-              <HashLink to='#connect'>
-                <button className="vvd"><span>Let’s Connect</span></button>
+              <HashLink >
+                <button className="vvd"><span>Connexion</span></button>
               </HashLink>
             </span>
           </Navbar.Collapse>
