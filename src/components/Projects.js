@@ -1,10 +1,16 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
+//TAMDA
 import architecture from "../assets/img/architecture.png";
 import st from "../assets/img/st.png";
 import geologie from "../assets/img/geologie.png";
 import SciencesHumaines from "../assets/img/SciencesHumaines.png";
 import Télécommunication from "../assets/img/Télécommunication.png";
+//TAMDA_FIN
+//BASTOS_DEBUT
+import math from "../assets/img/math.png";
+//BASTOS_FIN
+//HESNAOUA_DEBUT
 import Anglais from "../assets/img/Anglais.png";
 import Français from "../assets/img/Français.png";
 import Amazighes from "../assets/img/Amazighes.png";
@@ -14,6 +20,7 @@ import Gestion from "../assets/img/Gestion.png";
 import Commerciales from "../assets/img/Commerciales.png";
 import Comptabilité from "../assets/img/Comptabilité.png";
 import Economiques from "../assets/img/Economiques.png";
+//HESNAOUA_FIN
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -33,6 +40,38 @@ export const Projects = () => {
     },
     {
       title: "Geologie",
+      description: "Design & Development",
+      imgUrl: geologie,
+    },
+    {
+      title: "Sciences Humaines",
+      description: "Design & Development",
+      imgUrl: SciencesHumaines,
+    },
+    {
+      title: "Télécommunication",
+      description: "Design & Development",
+      imgUrl: Télécommunication,
+    },
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: geologie,
+    },
+  ];
+  const bastos = [
+    {
+      title: "Mathématiques",
+      description: "Design & Development",
+      imgUrl: math,
+    },
+    {
+      title: "Génie Electique",
+      description: "Design & Development",
+      imgUrl: st,
+    },
+    {
+      title: "électronique",
       description: "Design & Development",
       imgUrl: geologie,
     },
@@ -141,7 +180,7 @@ export const Projects = () => {
                     <Tab.Pane eventKey="second">
                     <Row>
                         {
-                          projects.map((project, index) => {
+                          bastos.map((project, index) => {
                             return (
                               <ProjectCard
                                 key={index}
