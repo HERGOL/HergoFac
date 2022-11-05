@@ -6,9 +6,12 @@ import st from "../assets/img/st.png";
 import geologie from "../assets/img/geologie.png";
 import SciencesHumaines from "../assets/img/SciencesHumaines.png";
 import Télécommunication from "../assets/img/Télécommunication.png";
+import biologie from "../assets/img/biologie.png";
+
 //TAMDA_FIN
 //BASTOS_DEBUT
 import math from "../assets/img/math.png";
+import info from "../assets/img/math.png";
 //BASTOS_FIN
 //HESNAOUA_DEBUT
 import Anglais from "../assets/img/Anglais.png";
@@ -27,11 +30,16 @@ import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
 
-  const projects = [
+  const Tamda = [
     {
       title: "Architecture",
       description: "Design & Development",
       imgUrl: architecture,
+    },
+    {
+      title: "Biologie",
+      description: "Design & Development",
+      imgUrl: biologie,
     },
     {
       title: "Sciences et Technologie",
@@ -76,12 +84,12 @@ export const Projects = () => {
       imgUrl: geologie,
     },
     {
-      title: "Sciences Humaines",
+      title: "Informatique",
       description: "Design & Development",
       imgUrl: SciencesHumaines,
     },
     {
-      title: "Télécommunication",
+      title: "Sience matiere",
       description: "Design & Development",
       imgUrl: Télécommunication,
     },
@@ -114,7 +122,7 @@ export const Projects = () => {
       imgUrl: Traduction,
     },
     {
-      title: "Langue et Littérature Arabes",
+      title: "Langue et Littératures Arabes",
       description: "Design & Development",
       imgUrl: Arabes,
     },
@@ -166,7 +174,7 @@ export const Projects = () => {
                     <Tab.Pane eventKey="first">
                       <Row>
                         {
-                          projects.map((project, index) => {
+                          Tamda.map((project, index) => {
                             return (
                               <ProjectCard
                                 key={index}
