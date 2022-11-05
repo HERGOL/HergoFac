@@ -11,7 +11,7 @@ import biologie from "../assets/img/biologie.png";
 //TAMDA_FIN
 //BASTOS_DEBUT
 import math from "../assets/img/math.png";
-import info from "../assets/img/math.png";
+import info from "../assets/img/info.png";
 //BASTOS_FIN
 //HESNAOUA_DEBUT
 import Anglais from "../assets/img/Anglais.png";
@@ -86,7 +86,7 @@ export const Projects = () => {
     {
       title: "Informatique",
       description: "Design & Development",
-      imgUrl: SciencesHumaines,
+      imgUrl: info,
     },
     {
       title: "Sience matiere",
