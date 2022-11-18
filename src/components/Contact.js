@@ -26,19 +26,19 @@ export const Contact = () => {
                 <form action="https://getform.io/f/537ce659-56e8-4936-9e04-b19e0387cd1b" method="POST" enctype="multipart/form-data">
                   <Row>
                     <Col size={12} sm={6} className="px-1">
-                      <input type="text" name="name" placeholder="Prénom"  />
+                      <input type="text" name="name" placeholder="Prénom" required />
                     </Col>
                     <Col size={12} sm={6} className="px-1">
-                    <input type="email" name="email" placeholder="Email"/>
+                    <input type="email" name="email" placeholder="Email" required/>
                     </Col>
                     <Col size={12} sm={6} className="px-1">
-                    <input type="text" name="département" placeholder="Votre département"/>
+                    <input type="text" name="département" placeholder="Votre département" />
                     </Col>
                     <Col size={12} sm={6} className="px-1">
                       <input type="text" name="Module" placeholder="Module du document" />
                     </Col>
                     <Col size={12} className="px-1">
-                    <input type="file" name="document"/>
+                    <input type="file" name="document" required/>
                       <button type="submit"><span>Send</span></button>
                     </Col>
                   </Row>
