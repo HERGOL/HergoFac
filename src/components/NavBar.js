@@ -6,9 +6,7 @@ import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
 import Popup from './popup';
 import { HashLink } from 'react-router-hash-link';
-import {
-  BrowserRouter as Router
-} from "react-router-dom";
+import { BrowserRouter as Router} from "react-router-dom";
 export const NavBar = () => {
 
   const [activeLink, setActiveLink] = useState('home');
@@ -31,7 +29,7 @@ export const NavBar = () => {
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
   }
- 
+ const [buttonPopup, setButtonPopup] = useState(false);
 
   return (
     <Router>
@@ -56,8 +54,8 @@ export const NavBar = () => {
                 <a href="https://www.instagram.com/hergol.tech/"><img src={navIcon3} alt="Hergol Instageam" /></a>
               </div>
               <HashLink >
-                <button className="vvd" onClick={}><span>Connexion</span></button>
-                <Popup trigger={false}>
+                <button className="vvd" onClick={() => setButtonPopup(true)}><span>Connexion</span></button>
+                <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
                 <h3>Bientot</h3>
                 </Popup>
               </HashLink>
