@@ -59,6 +59,7 @@ export const NavBar = () => {
                 <h3>Bientot</h3>
                 </Popup>
               </HashLink>
+                
             </span>
           </Navbar.Collapse>
         </Container>
