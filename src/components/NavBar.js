@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect , React} from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from '../assets/img/logo.svg';
 import navIcon1 from '../assets/img/nav-icon1.svg';
@@ -31,7 +31,7 @@ export const NavBar = () => {
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
   }
-  
+ 
 
   return (
     <Router>
@@ -56,8 +56,8 @@ export const NavBar = () => {
                 <a href="https://www.instagram.com/hergol.tech/"><img src={navIcon3} alt="Hergol Instageam" /></a>
               </div>
               <HashLink >
-                <button className="vvd"><span>Connexion</span></button>
-                <Popup trigger={true}>
+                <button className="vvd" onClick={}><span>Connexion</span></button>
+                <Popup trigger={false}>
                 <h3>Bientot</h3>
                 </Popup>
               </HashLink>
