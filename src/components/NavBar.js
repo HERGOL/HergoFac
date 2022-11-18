@@ -57,9 +57,9 @@ export const NavBar = () => {
               </div>
               <HashLink >
                 <button className="vvd"><span>Connexion</span></button>
-                <popup trigger={true}>
+                <Popup trigger={true}>
                 <h3>Bientot</h3>
-                </popup>
+                </Popup>
               </HashLink>
             </span>
           </Navbar.Collapse>

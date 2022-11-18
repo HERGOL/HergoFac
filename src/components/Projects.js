@@ -44,7 +44,7 @@ export const Projects = () => {
     },
     {
       title: "Sciences et Technologie",
-      description: "Design & Development",
+      description: "Faculté des Sciences",
       imgUrl: st,
     },
     {
@@ -71,7 +71,7 @@ export const Projects = () => {
   const bastos = [
     {
       title: "Mathématiques",
-      description: "Design & Development",
+      description: "Faculté des Sciences",
       imgUrl: math,
     },
     {
@@ -91,12 +91,12 @@ export const Projects = () => {
     },
     {
       title: "Sience matiere",
-      description: "Design & Development",
+      description: "Faculté des Sciences",
       imgUrl: Télécommunication,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Chimie",
+      description: "Faculté des Sciences",
       imgUrl: geologie,
     },
   ];
