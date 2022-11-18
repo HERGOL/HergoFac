@@ -39,7 +39,7 @@ export const Contact = () => {
                     </Col>
                     <Col size={12} className="px-1">
                     <input type="file" name="document" required/>
-                      <button type="submit"><span>Send</span></button>
+                      <button type="submit"><span>Envoyer</span></button>
                     </Col>
                   </Row>
                 </form>
