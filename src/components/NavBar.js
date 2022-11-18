@@ -56,7 +56,6 @@ export const NavBar = () => {
               <HashLink >
                 <button className="vvd" onClick={() => setButtonPopup(true)}><span>Connexion</span></button>
                 <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
-                <h3>Bientot</h3>
                 </Popup>
               </HashLink>
                 

@@ -58,7 +58,7 @@ export const Banner = () => {
                 <span className="tagline">Powered by Hergol</span>
                 <h1>{`Hi! Bienvenu sur HergoFac.`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "/Cours.", "/TD.", "/Examens.","/Exercices."]'><span className="wrap">{text}</span></span></h1>
                   <p>Le site qui va vous permettre d'accéder à des Cours, TD et des sujets d'examens pour pouvoir réviser en toute simplicité. Notre site est collaboratif, ce qui veut dire que tout le monde peut ajouter des sujets à tout moment.</p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                  <button href="#Départements" >Go réviser<ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
           </Col>
