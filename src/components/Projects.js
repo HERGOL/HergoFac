@@ -27,6 +27,7 @@ import Economiques from "../assets/img/Economiques.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import { useHistory } from 'react-router-dom';
 
 export const Projects = () => {
 
@@ -207,7 +208,7 @@ export const Projects = () => {
                               <ProjectCard
                                 key={index}
                                 {...project}
-                                />
+                                 />
                             )
                           })
                         }

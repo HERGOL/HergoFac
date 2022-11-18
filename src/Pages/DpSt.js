@@ -1,67 +1,20 @@
-import { useState, useEffect } from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from '../assets/img/logo.svg';
-import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon2 from '../assets/img/nav-icon2.svg';
-import navIcon3 from '../assets/img/nav-icon3.svg';
-import { HashLink } from 'react-router-hash-link';
-import {
-  BrowserRouter as Router
-} from "react-router-dom";
+import logo from '../logo.svg';
+import '../App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { NavBar } from "../components/NavBar";
+import { Banner } from "../components/Banner";
+import { Contact } from "../components/Contact";
+import { Footer } from "../components/Footer";
 
-export const DpSt = () => {
-
-  const [activeLink, setActiveLink] = useState('home');
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    }
-
-    window.addEventListener("scroll", onScroll);
-
-    return () => window.removeEventListener("scroll", onScroll);
-  }, [])
-
-  const onUpdateActiveLink = (value) => {
-    setActiveLink(value);
-  }
-  
-
+function DpSt() {
   return (
-    <Router>
-      <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
-        <Container>
-          <Navbar.Brand href="/">
-            <img src={logo} alt="Logo" />
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav">
-            <span className="navbar-toggler-icon"></span>
-          </Navbar.Toggle>
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto">
-              <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-              <Nav.Link href="#Statistics" className={activeLink === 'statistics' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('Statistics')}>Statistics</Nav.Link>
-              <Nav.Link href="#Départements" className={activeLink === 'Départements' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('Départements')}>Départements</Nav.Link>
-            </Nav>
-            <span className="navbar-text">
-              <div className="social-icon">
-                <a href="https://linkedin.com/company/hergol"><img src={navIcon1} alt="Hergol Linkedin" /></a>
-                <a href="https://www.hergol.me/"><img src={navIcon2} alt="Hergol Website" /></a>
-                <a href="https://www.instagram.com/hergol.tech/"><img src={navIcon3} alt="Hergol Instageam" /></a>
-              </div>
-              <HashLink >
-                <button className="vvd"><span>Connexion</span></button>
-              </HashLink>
-            </span>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-    </Router>
-  )
+    <div className="App">
+      <NavBar />
+      <Banner />
+      <Contact />
+      <Footer />
+    </div>
+  );
 }
+
+export default DpSt;
