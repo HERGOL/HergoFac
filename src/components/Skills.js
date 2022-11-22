@@ -35,23 +35,23 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2>Statistics</h2>
-                        <p>Ici, vous allez trouver le nombre de fichiers<br></br>Et le nombre de collaborations pour chaque faculté.</p>
+                        <p>Ici, vous allez trouver le nombre de fichiers<br></br>disponible sur le site.Ses chiffres sont en constante augmentation.</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                                 <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
+                                <h5>Cours</h5>
                             </div>
                             <div className="item">
                                 <img src={meter2} alt="Image" />
-                                <h5>Génie De La Construction</h5>
+                                <h5>TD</h5>
                             </div>
                             <div className="item">
                                 <img src={meter3} alt="Image" />
-                                <h5>Génie Electrique et Informatique</h5>
+                                <h5>Examens</h5>
                             </div>
                             <div className="item">
                                 <img src={meter1} alt="Image" />
-                                <h5>Sciences Biologiques et Sciences Agronomiques</h5>
+                                <h5>Résumés</h5>
                             </div>
                         </Carousel>
                     </div>

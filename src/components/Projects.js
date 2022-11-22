@@ -27,45 +27,53 @@ import Economiques from "../assets/img/Economiques.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import { useHistory } from 'react-router-dom';
+
 
 export const Projects = () => {
+
 
   const Tamda = [
     {
       title: "Architecture",
       description: "Design & Development",
       imgUrl: architecture,
+      url: "DpArch" ,
     },
     {
       title: "Biologie",
       description: "Design & Development",
       imgUrl: biologie,
+      url: "DpBio",
     },
     {
       title: "Sciences et Technologie",
       description: "Faculté des Sciences",
       imgUrl: st,
+      url: "DpSt" ,
     },
     {
       title: "Geologie",
       description: "Design & Development",
       imgUrl: geologie,
+      url: "DpGeo",
     },
     {
       title: "Sciences Humaines",
       description: "Design & Development",
       imgUrl: SciencesHumaines,
+      url: "DpSH" ,
     },
     {
       title: "Télécommunication",
       description: "Design & Development",
       imgUrl: Télécommunication,
+      url: "Dpt" , 
     },
     {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: geologie,
+      url: "DpSH" ,
     },
   ];
   const bastos = [
@@ -177,12 +185,8 @@ export const Projects = () => {
                         {
                           Tamda.map((project, index) => {
                             return (
-                              <ProjectCard
-                                key={index}
-                                {...project}
-                                />
-                            )
-                          })
+                              <ProjectCard  key={index}{...project}/>
+                          )})
                         }
                       </Row>
                     </Tab.Pane>
