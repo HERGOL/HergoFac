@@ -11,6 +11,9 @@ function Popup(props) {
           <h1>OUPS &#127880;</h1>
         </div>
         <div className="body">
+        <img class="svg 404"
+     src="/assets/img/popupface.svg"
+     alt=""/>
           <p> Coming Soon!!</p>
         </div>
             </div>
