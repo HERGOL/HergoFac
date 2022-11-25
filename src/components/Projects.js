@@ -12,6 +12,11 @@ import biologie from "../assets/img/biologie.png";
 //BASTOS_DEBUT
 import math from "../assets/img/math.png";
 import info from "../assets/img/info.png";
+import electro from "../assets/img/electronique.png";
+import chimie from "../assets/img/chimie.png";
+import sm from "../assets/img/sm.png";
+import ge from "../assets/img/ge.png";
+import gc from "../assets/img/gc.png";
 //BASTOS_FIN
 //HESNAOUA_DEBUT
 import Anglais from "../assets/img/Anglais.png";
@@ -85,12 +90,12 @@ export const Projects = () => {
     {
       title: "Génie Electique",
       description: "Design & Development",
-      imgUrl: st,
+      imgUrl: ge,
     },
     {
       title: "électronique",
       description: "Design & Development",
-      imgUrl: geologie,
+      imgUrl: electro,
     },
     {
       title: "Informatique",
@@ -100,12 +105,17 @@ export const Projects = () => {
     {
       title: "Sience matiere",
       description: "Faculté des Sciences",
-      imgUrl: Télécommunication,
+      imgUrl: sm,
     },
     {
       title: "Chimie",
       description: "Faculté des Sciences",
-      imgUrl: geologie,
+      imgUrl: chimie,
+    },
+    {
+      title: "Génie Civil",
+      description: "Faculté des Sciences",
+      imgUrl: gc,
     },
   ];
   
