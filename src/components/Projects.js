@@ -204,13 +204,8 @@ export const Projects = () => {
                         {
                           Tamda.map((project, index) => {
                             return (
-<<<<<<< Updated upstream
                               <Link to={`${project.url}`} style={{ color: 'inherit', textDecoration: 'inherit' }}> 
                               <ProjectCard key={index}{...project}/>
-=======
-                              <Link to={`${project.url}`} className="linkcuk" style={{ color: 'inherit', textDecoration: 'inherit'  }}> 
-                              <ProjectCard key={index}{...project} />
->>>>>>> Stashed changes
                               </Link>
                               
                               
