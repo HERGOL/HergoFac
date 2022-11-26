@@ -1,20 +1,19 @@
 import React from 'react';
-import NavBar from '../components/NavBar';
-import Footer from '../components/Footer';
+import {NavBar} from '../components/NavBar';
+import {Footer} from '../components/Footer';
 
 
 
 
 
 
-const MiniShop = () => {
+const DpSt = () => {
  return (
-  <> 
-  <NavBar/>
-  <Footer/>
-  </>
-
+  <div className="back">
+     <NavBar />
+      <Footer />
+  </div>
   )
 }
 
-export default MiniShop
+export default DpSt
