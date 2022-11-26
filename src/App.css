@@ -651,6 +651,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   animation:
   background 10 s infinite alternate linear;
 }
+.scrolle{
+  overflow: hidden;
+}
+
 .top-header:before {
   background-image: url(https://1.bp.blogspot.com/-gxsOcYWghHA/Xp_izTh4sFI/AAAAAAAAU8s/y637Fwg99qAuzW9na_NT_uApny8Vce95gCEwYBhgL/s1600/header-footer-gradient-bg.png);
 }
@@ -1129,4 +1133,5 @@ body, html, {
 .error__nav {
   margin-top: 20px;
 }
+
 }
