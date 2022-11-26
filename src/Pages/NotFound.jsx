@@ -9,6 +9,7 @@ import React from 'react';
 const NotFound = () => {
  return (
 <a>
+  <div classe= "scrolle"> 
   <header class="top-header">
 </header>
 <div>
@@ -43,7 +44,7 @@ const NotFound = () => {
 
 
 </section>
-
+</div>
   </a>
   )
 }
