@@ -32,6 +32,8 @@ import Economiques from "../assets/img/Economiques.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import {Link} from "react-router-dom";
+
 
 
 export const Projects = () => {
@@ -54,7 +56,7 @@ export const Projects = () => {
       title: "Sciences et Technologie",
       description: "Faculté des Sciences",
       imgUrl: st,
-      url: "DpSt" ,
+      url: "St" ,
     },
     {
       title: "Geologie",
@@ -195,7 +197,10 @@ export const Projects = () => {
                         {
                           Tamda.map((project, index) => {
                             return (
+      
+                              <Link to={`${project.url}`} style={{ color: 'inherit', textDecoration: 'inherit' }}> 
                               <ProjectCard  key={index}{...project}/>
+                              </Link>
                           )})
                         }
                       </Row>
