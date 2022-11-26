@@ -199,7 +199,7 @@ export const Projects = () => {
                             return (
       
                               <Link to={`${project.url}`} style={{ color: 'inherit', textDecoration: 'inherit' }}> 
-                              <ProjectCard  key={index}{...project}/>
+                              <ProjectCard key={index}{...project}/>
                               </Link>
                           )})
                         }

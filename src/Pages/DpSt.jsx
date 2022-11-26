@@ -1,5 +1,5 @@
 import React from 'react';
-import {NavBar} from '../components/NavBar';
+import {NavBarDp} from '../components/NavBarDp';
 import {Footer} from '../components/Footer';
 
 
@@ -10,8 +10,7 @@ import {Footer} from '../components/Footer';
 const DpSt = () => {
  return (
   <div className="back">
-     <NavBar />
-      <Footer />
+     <NavBarDp />
   </div>
   )
 }
