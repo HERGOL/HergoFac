@@ -44,43 +44,43 @@ export const Projects = () => {
       title: "Architecture",
       description: "Design & Development",
       imgUrl: architecture,
-      url: "DpArch" ,
+      url: "/Dps/DpArch" ,
     },
     {
       title: "Biologie",
       description: "Design & Development",
       imgUrl: biologie,
-      url: "DpBio",
+      url: "/Dps/DpBio",
     },
     {
       title: "Sciences et Technologie",
       description: "Faculté des Sciences",
       imgUrl: st,
-      url: "St" ,
+      url: "/Dps/DpSt" ,
     },
     {
       title: "Geologie",
       description: "Design & Development",
       imgUrl: geologie,
-      url: "DpGeo",
+      url: "/Dps/DpGeo",
     },
     {
       title: "Sciences Humaines",
       description: "Design & Development",
       imgUrl: SciencesHumaines,
-      url: "DpSH" ,
+      url: "/Dps/DpSh" ,
     },
     {
       title: "Télécommunication",
       description: "Design & Development",
       imgUrl: Télécommunication,
-      url: "Dpt" , 
+      url: "/Dps/Dpt" , 
     },
     {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: geologie,
-      url: "DpSH" ,
+      url: "/Dps/DpSH" ,
     },
   ];
   const bastos = [
@@ -88,36 +88,43 @@ export const Projects = () => {
       title: "Mathématiques",
       description: "Faculté des Sciences",
       imgUrl: math,
+      url: "DpMath" ,
     },
     {
       title: "Génie Electique",
       description: "Design & Development",
       imgUrl: ge,
+      url: "/Dps/DpGe" ,
     },
     {
       title: "électronique",
       description: "Design & Development",
       imgUrl: electro,
+      url: "/Dps/DpElectro" ,
     },
     {
       title: "Informatique",
       description: "Design & Development",
       imgUrl: info,
+      url: "/Dps/DpInfo" ,
     },
     {
       title: "Sience matiere",
       description: "Faculté des Sciences",
       imgUrl: sm,
+      url: "/Dps/DpSm" ,
     },
     {
       title: "Chimie",
       description: "Faculté des Sciences",
       imgUrl: chimie,
+      url: "/Dps/DpChimie" ,
     },
     {
       title: "Génie Civil",
       description: "Faculté des Sciences",
       imgUrl: gc,
+      url: "/Dps/DpGc" ,
     },
   ];
   
@@ -197,7 +204,6 @@ export const Projects = () => {
                         {
                           Tamda.map((project, index) => {
                             return (
-      
                               <Link to={`${project.url}`} style={{ color: 'inherit', textDecoration: 'inherit' }}> 
                               <ProjectCard key={index}{...project}/>
                               </Link>
