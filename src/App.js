@@ -10,7 +10,6 @@ import DpSm from './Pages/Dps/DpSm';
 import DpMath from './Pages/Dps/DpMath';
 import DpGeo from './Pages/Dps/DpGeo';
 import DpGc from './Pages/Dps/DpGc';
-import DpArch from './Pages/Dps/DpArch';
 
 import NotFound from './Pages/NotFound';
 
@@ -30,7 +29,6 @@ function App() {
         <Route path='/Dps/DpMath' component={DpMath} exact/>
         <Route path='/Dps/DpSh' component={DpSh} exact/>
         <Route path='/Dps/DpGeo' component={DpGeo} exact/>
-        <Route path='/Dps/DpArch' component={DpArch} exact/>
         <Route path="*" component={NotFound} />
       </Switch>
     </Router>

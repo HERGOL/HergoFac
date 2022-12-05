@@ -889,7 +889,7 @@ position: relative;
 }
 
 .e-nav__link:after {
-content: "Home Page";
+content: "";
 }
 
 .e-nav__link:hover:before {
