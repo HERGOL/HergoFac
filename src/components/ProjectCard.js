@@ -14,3 +14,4 @@ export const ProjectCard = ({ title, description, imgUrl }) => {
     </Col>
   )
 }
+
