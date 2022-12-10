@@ -1,8 +1,9 @@
 import React from 'react';
 import {NavBarDp} from '../../components/NavBarDp';
 import { ServicesCard , ServicesIcon , ServicesH2,ServicesWrapper,CoursT1,EmdT1 , ServicesWrapper2} from '../Cards/CardsElements';
-import {Link} from "react-router-dom";
 import math from "../../assets/img/math.png";
+import { ExternalLink } from 'react-external-link';
+
 
 
 
@@ -14,30 +15,32 @@ const DpSt = () => {
    const Cours = [
       {
          id: 1,
-        Module: "Maths",
+        Module: "Maths S1",
         imgUrl: math,
         url: "https://drive.google.com/drive/folders/1iBycs4zWx6W72i1gWgfOqQQFLtHeODf9?usp=share_link" ,
       },
       {
          id: 2,
-        Module: "Physique",
+        Module: "Physique S1",
         imgUrl:  math,
-        url: "/Dps/DpArch" ,
+        url: "https://drive.google.com/drive/folders/1XePfkwW2fVN-s3Eb3WX7ThRMMad9-uld?usp=sharing" ,
       },
       {
          id: 3,
-        Module: "chimie",
+        Module: "chimie S1",
         imgUrl:  math,
-        url: "/Dps/DpArch" ,
+        url: "https://drive.google.com/drive/folders/18MGEgqg1wEAVY4GKO0qTPh5DW7QRcmT7?usp=sharing" ,
       },
       {
          id: 4,
-         Module: "informatique",
+         Module: "informatique S1",
          imgUrl:  math,
-         url: "/Dps/DpArch" ,
+         url: "https://drive.google.com/drive/folders/1HwdGflBrMfpqhibC1Ihq7U3aFHIVxavf?usp=sharing" ,
       },
    ];
  return (
+  <>
+
   <div >
      <NavBarDp />
      <CoursT1>Cours</CoursT1>
@@ -45,12 +48,13 @@ const DpSt = () => {
      {
       Cours.map((Module, index) => {
           return (
-     <Link to={Module.url} style={{ color: 'inherit', textDecoration: 'inherit' }}>
+            
+         <ExternalLink  href={Module.url} style={{ color: 'inherit', textDecoration: 'inherit' }} >
         <ServicesCard  key={Module.id} >
           <ServicesIcon src={Module.imgUrl}/>
           <ServicesH2>{Module.Module}</ServicesH2>
         </ServicesCard>
-        </Link>
+        </ExternalLink>
      )})
  }
 </ServicesWrapper>
@@ -59,17 +63,18 @@ const DpSt = () => {
      {
       Cours.map((Module, index) => {
           return (
-     <Link to={Module.url} style={{ color: 'inherit', textDecoration: 'inherit' }}>
+            <ExternalLink  href={Module.url} style={{ color: 'inherit', textDecoration: 'inherit' }} >
         <ServicesCard  key={Module.id} >
           <ServicesIcon src={Module.imgUrl}/>
           <ServicesH2>{Module.Module}</ServicesH2>
         </ServicesCard>
-        </Link>
+        </ExternalLink>
      )})
  }
 </ServicesWrapper2>
 
   </div>
+ </>
   )
 }
 

@@ -60,7 +60,7 @@ export const Banner = () => {
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Powered by Hergol</span>
                 <h1>{`Hi! Bienvenu sur HergoFac.`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "/Cours.", "/TD.", "/Examens.","/Exercices."]'><span className="wrap">{text}</span></span></h1>
-                  <p>Le site qui va vous permettre d'accéder à des Cours, TD et des sujets d'examens pour pouvoir réviser en toute simplicité. Notre site est collaboratif, ce qui veut dire que tout le monde peut ajouter des sujets à tout moment.</p>
+                  <p>Le site qui vous permet d'accéder à vos cours, TD et EMD en quelques clics. Collaborez avec nous, car oui vous pouvez ajouter du contenus que vous avez pour avoir ce que vous n'avez pas.</p>
                   <button href="#Départements" >Go réviser<ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>

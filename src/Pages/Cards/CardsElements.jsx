@@ -40,7 +40,7 @@ export const ServicesWrapper = styled.div`
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
     position: relative;
-    top:400px;
+    top:200px;
     left:-200px;
     grid-gap: 100px;
     padding: 0 30px;
@@ -59,7 +59,7 @@ export const CoursT1 = styled.h1`
   color: #fff;
   position: relative;
   left: 870px;
-  top: 300px;
+  top: 180px;
   @media screen and (max-width: 480px) {
     font-size: 2rem;
     position: relative;
@@ -72,7 +72,7 @@ export const EmdT1= styled.h1`
   color: #fff;
   position: relative;
   left: 870px;
-  top: 600px;
+  top: 300px;
   @media screen and (max-width: 480px) {
     font-size: 2rem;
     position: relative;
@@ -87,7 +87,7 @@ export const ServicesWrapper2 = styled.div`
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
     position: relative;
-    top:700px;
+    top:300px;
     left:-200px;
     grid-gap: 100px;
     padding: 0 30px;

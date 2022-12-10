@@ -33,7 +33,7 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2>Statistics</h2>
-                        <p>Ici, vous allez trouver le nombre de fichiers<br></br>disponible sur le site.Ses chiffres sont en constante augmentation.</p>
+                        <p>Plus vous ajoutez des fichiers plus ces chiffres augmentent.</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                                 <img src={meter1} alt="" />

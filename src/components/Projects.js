@@ -185,7 +185,7 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Départements</h2>
-                <p>Ici, vous allez trouver tous les doucement que vous aurait besoin pour réviser.Les départements sont triés par apport au campus où vous étudiez.</p>
+                <p>Pour vos révisions, trouvez ici tous les documents nécessaires, triés par départements.</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
