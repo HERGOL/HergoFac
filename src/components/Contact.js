@@ -21,7 +21,7 @@ export const Contact = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <h2>Partager vous Documents avec les autres.</h2>
+                <h2>Partager vos Documents avec les autres.</h2>
                 <form action="https://getform.io/f/537ce659-56e8-4936-9e04-b19e0387cd1b" method="POST" enctype="multipart/form-data">
                   <Row>
                     <Col size={12} sm={6} className="px-1">

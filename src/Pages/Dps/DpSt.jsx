@@ -1,8 +1,12 @@
 import React from 'react';
 import {NavBarDp} from '../../components/NavBarDp';
 import { ServicesCard , ServicesIcon , ServicesH2,ServicesWrapper,CoursT1,EmdT1 , ServicesWrapper2} from '../Cards/CardsElements';
-import math from "../../assets/img/math.png";
+import math from "../../assets/img/mathS1.png";
+import physique from "../../assets/img/physiqueS1.png";
+import chimie from "../../assets/img/chimieS1.png";
+import info from "../../assets/img/infoS1.png";
 import { ExternalLink } from 'react-external-link';
+import { Info } from 'react-bootstrap-icons';
 
 
 
@@ -22,19 +26,19 @@ const DpSt = () => {
       {
          id: 2,
         Module: "Physique S1",
-        imgUrl:  math,
+        imgUrl:  physique,
         url: "https://drive.google.com/drive/folders/1XePfkwW2fVN-s3Eb3WX7ThRMMad9-uld?usp=sharing" ,
       },
       {
          id: 3,
         Module: "chimie S1",
-        imgUrl:  math,
+        imgUrl:  chimie,
         url: "https://drive.google.com/drive/folders/18MGEgqg1wEAVY4GKO0qTPh5DW7QRcmT7?usp=sharing" ,
       },
       {
          id: 4,
          Module: "informatique S1",
-         imgUrl:  math,
+         imgUrl:  info,
          url: "https://drive.google.com/drive/folders/1HwdGflBrMfpqhibC1Ihq7U3aFHIVxavf?usp=sharing" ,
       },
    ];
