@@ -6,7 +6,7 @@ import physique from "../../assets/img/physiqueS1.png";
 import chimie from "../../assets/img/chimieS1.png";
 import info from "../../assets/img/infoS1.png";
 import { ExternalLink } from 'react-external-link';
-import { Info } from 'react-bootstrap-icons';
+
 
 
 
