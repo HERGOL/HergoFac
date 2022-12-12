@@ -204,11 +204,9 @@ export const Projects = () => {
                         {
                           Tamda.map((project, index) => {
                             return (
-                              <Link to={`${project.url}`} style={{ color: 'inherit', textDecoration: 'inherit' }}> 
+                              <Link to={`${project.url}`} style={{ color: 'inherit', textDecoration: 'inherit'}}> 
                               <ProjectCard key={index}{...project}/>
                               </Link>
-                              
-                
                           )})
                         }
                       </Row>
@@ -218,12 +216,10 @@ export const Projects = () => {
                         {
                           bastos.map((project, index) => {
                             return (
-                              <ProjectCard
-                                key={index}
-                                {...project}
-                                />
-                            )
-                          })
+                              <ProjectCard key={index}
+                              {...project}
+                              />
+                          )})
                         }
                       </Row>
                     </Tab.Pane>
