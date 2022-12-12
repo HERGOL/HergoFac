@@ -1,6 +1,5 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import { DepartementCard , DepartementIcon ,DepartementWarpper} from '../Pages/Cards/CardsElements';
 //TAMDA
 import architecture from "../assets/img/architecture.png";
 import st from "../assets/img/st.png";
@@ -34,6 +33,7 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import {Link} from "react-router-dom";
+
 
 
 
@@ -76,12 +76,6 @@ export const Projects = () => {
       description: "Design & Development",
       imgUrl: Télécommunication,
       url: "/Dps/Dpt" , 
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: geologie,
-      url: "/Dps/DpSH" ,
     },
   ];
   const bastos = [

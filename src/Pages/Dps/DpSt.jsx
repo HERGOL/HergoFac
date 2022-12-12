@@ -108,7 +108,7 @@ const DpSt = () => {
       url: "https://drive.google.com/drive/folders/1HwdGflBrMfpqhibC1Ihq7U3aFHIVxavf?usp=sharing" ,
    },
    ];
-   const Semestre = [...new Set(Cours.map((Module) => Module.S))];
+   
  return (
   <>
 
