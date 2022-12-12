@@ -89,7 +89,7 @@ export const Projects = () => {
       title: "Mathématiques",
       description: "Faculté des Sciences",
       imgUrl: math,
-      url: "DpMath" ,
+      url: "/Dps/DpMath" ,
     },
     {
       title: "Génie Electique",

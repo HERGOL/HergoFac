@@ -3,7 +3,7 @@ import {NavBarDp} from '../../components/NavBarDp';
 import { ServicesCard , ServicesIcon , ServicesH2,ServicesWrapper,CoursT1,EmdT1 , ServicesWrapper2} from '../Cards/CardsElements';
 import Analyse from "../../assets/img/Analyse.png";
 import physique from "../../assets/img/physiqueS1.png";
-import Algebre from "../../assets/img/chimieS1.png";
+import Algebre from "../../assets/img/Algebre.png";
 import SMachine from "../../assets/img/SMachine.png";
 import SMachineEMD from "../../assets/img/SMachineEMD.png";
 import AlgebreEMD from "../../assets/img/AlgebreEMD.png";
