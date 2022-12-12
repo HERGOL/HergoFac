@@ -101,3 +101,45 @@ export const ServicesWrapper2 = styled.div`
       top:-290px;
   }
 `
+export const DepartementWarpper = styled.div`
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    position: relative;
+    top:300px;
+    left:-200px;
+    grid-gap: 100px;
+    padding: 0 30px;
+    @media screen and (max-width: 1000px) {
+      grid-template-columns: 1fr 1fr;
+  }
+    @media screen and (max-width: 786px) {
+      grid-template-columns: 1fr ;
+      padding: 0 10px;
+      left:0px;
+      top:-290px;
+  }
+  `
+  export const DepartementIcon = styled.img`
+  height: 487px;
+  width: 487px;
+`
+export const DepartementCard = styled.div`
+  background: transparent; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius:10% 10% 10% 10% ;
+  height: 487px;
+  width: 487px;
+  padding:  30px;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.02);
+    transition: all 0.2s ease-in-out;
+    cursor:pointer;
+  }
+`

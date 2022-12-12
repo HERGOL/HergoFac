@@ -1,5 +1,6 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
+import { DepartementCard , DepartementIcon ,DepartementWarpper} from '../Pages/Cards/CardsElements';
 //TAMDA
 import architecture from "../assets/img/architecture.png";
 import st from "../assets/img/st.png";
@@ -200,42 +201,60 @@ export const Projects = () => {
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
-                      <Row>
-                        {
+                    <Row size={12} md={3} >
+                       {
                           Tamda.map((project, index) => {
                             return (
-                              <Link to={`${project.url}`} style={{ color: 'inherit', textDecoration: 'inherit' }}> 
-                              <ProjectCard key={index}{...project}/>
-                              </Link>
-                              
-                
-                          )})
-                        }
-                      </Row>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="second">
-                    <Row>
-                        {
-                          bastos.map((project, index) => {
-                            return (
+<<<<<<< HEAD
+                              <Link to={`${project.url}`} style={{ color: 'inherit', textDecoration: 'inherit' }}>
                               <ProjectCard
                                 key={index}
                                 {...project}
                                 />
+                                </Link>
+=======
+                              <Link to={`${project.url}`} style={{ color: 'inherit', textDecoration: 'inherit'}}> 
+                              <ProjectCard key={index}{...project}/>
+                              </Link>
+>>>>>>> main
+                          )})
+                        }
+                     </Row>
+                    </Tab.Pane>
+                    <Tab.Pane eventKey="second">
+                    <Row size={12} md={3}>
+                        {
+                          bastos.map((project, index) => {
+                            return (
+<<<<<<< HEAD
+                              <Link to={`${project.url}`} style={{ color: 'inherit', textDecoration: 'inherit' }}>
+                              <ProjectCard
+                                key={index}
+                                {...project}
+                                />
+                                </Link>
                             )
                           })
+=======
+                              <ProjectCard key={index}
+                              {...project}
+                              />
+                          )})
+>>>>>>> main
                         }
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                    <Row>
+                    <Row size={12} md={3}>
                         {
                           Hesnaoua.map((project, index) => {
                             return (
+                              <Link to={`${project.url}`} style={{ color: 'inherit', textDecoration: 'inherit' }}>
                               <ProjectCard
                                 key={index}
                                 {...project}
                                  />
+                                 </Link>
                             )
                           })
                         }

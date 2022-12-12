@@ -26,27 +26,59 @@ const DpSt = () => {
       {
          id: 1,
         Module: "Maths S1",
+        S: 1 ,
         imgUrl: math,
         url: "https://drive.google.com/drive/folders/1iBycs4zWx6W72i1gWgfOqQQFLtHeODf9?usp=share_link" ,
       },
       {
          id: 2,
         Module: "Physique S1",
+        S: 1 ,
         imgUrl:  physique,
         url: "https://drive.google.com/drive/folders/1XePfkwW2fVN-s3Eb3WX7ThRMMad9-uld?usp=sharing" ,
       },
       {
          id: 3,
         Module: "chimie S1",
+        S: 1 ,
         imgUrl:  chimie,
         url: "https://drive.google.com/drive/folders/18MGEgqg1wEAVY4GKO0qTPh5DW7QRcmT7?usp=sharing" ,
       },
       {
          id: 4,
          Module: "informatique S1",
+         S: 1 ,
          imgUrl:  info,
          url: "https://drive.google.com/drive/folders/1HwdGflBrMfpqhibC1Ihq7U3aFHIVxavf?usp=sharing" ,
       },
+      {
+        id: 5,
+       Module: "Maths S2",
+       S: 2 ,
+       imgUrl: math,
+       url: "https://drive.google.com/drive/folders/1iBycs4zWx6W72i1gWgfOqQQFLtHeODf9?usp=share_link" ,
+     },
+     {
+        id: 6,
+       Module: "Physique S2",
+       S: 2 ,
+       imgUrl:  physique,
+       url: "https://drive.google.com/drive/folders/1XePfkwW2fVN-s3Eb3WX7ThRMMad9-uld?usp=sharing" ,
+     },
+     {
+        id: 7,
+       Module: "chimie S2",
+       S: 2 ,
+       imgUrl:  chimie,
+       url: "https://drive.google.com/drive/folders/18MGEgqg1wEAVY4GKO0qTPh5DW7QRcmT7?usp=sharing" ,
+     },
+     {
+        id: 8,
+        Module: "informatique S2",
+        S: 2 ,
+        imgUrl:  info,
+        url: "https://drive.google.com/drive/folders/1HwdGflBrMfpqhibC1Ihq7U3aFHIVxavf?usp=sharing" ,
+     },
    ];
 
 
@@ -76,6 +108,7 @@ const DpSt = () => {
       url: "https://drive.google.com/drive/folders/1HwdGflBrMfpqhibC1Ihq7U3aFHIVxavf?usp=sharing" ,
    },
    ];
+   const Semestre = [...new Set(Cours.map((Module) => Module.S))];
  return (
   <>
 
@@ -97,6 +130,20 @@ const DpSt = () => {
  }
 </ServicesWrapper>
 <EmdT1>EMD</EmdT1>
+<ServicesWrapper2>
+     {
+      EMD.map((Module, index) => {
+          return (
+            <ExternalLink  href={Module.url} style={{ color: 'inherit', textDecoration: 'inherit' }} >
+        <ServicesCard  key={Module.id} >
+          <ServicesIcon src={Module.imgUrl}/>
+          <ServicesH2>{Module.Module}</ServicesH2>
+        </ServicesCard>
+        </ExternalLink>
+     )})
+ }
+</ServicesWrapper2>
+<EmdT1>TD</EmdT1>
 <ServicesWrapper2>
      {
       EMD.map((Module, index) => {
