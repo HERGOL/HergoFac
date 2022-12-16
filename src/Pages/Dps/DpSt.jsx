@@ -1,6 +1,6 @@
 import React from 'react';
 import {NavBarDp} from '../../components/NavBarDp';
-import { ServicesCard , ServicesIcon , ServicesH2,ServicesWrapper,CoursT1,EmdT1 , ServicesWrapper2} from '../Cards/CardsElements';
+import { ServicesCard , ServicesIcon , ServicesH2,ServicesWrapper,CoursT1,EmdT1 , ServicesWrapper2 ,ServicesWrapper3} from '../Cards/CardsElements';
 import math from "../../assets/img/mathS1.png";
 import physique from "../../assets/img/physiqueS1.png";
 import chimie from "../../assets/img/chimieS1.png";
@@ -12,8 +12,6 @@ import physiqueEMD from "../../assets/img/physiqueEMD.png";
 
 
 import { ExternalLink } from 'react-external-link';
-
-
 
 
 
@@ -84,25 +82,25 @@ const DpSt = () => {
 
    const EMD = [
     {
-      id: 1,
+      id: 9,
      Module: "Maths",
      imgUrl: mathEMD,
      url: "https://drive.google.com/drive/folders/1iBycs4zWx6W72i1gWgfOqQQFLtHeODf9?usp=share_link" ,
    },
    {
-      id: 2,
+      id: 10,
      Module: "Physique",
      imgUrl:  physiqueEMD,
      url: "https://drive.google.com/drive/folders/1XePfkwW2fVN-s3Eb3WX7ThRMMad9-uld?usp=sharing" ,
    },
    {
-      id: 3,
+      id: 11,
      Module: "chimie",
      imgUrl:  chimieEMD,
      url: "https://drive.google.com/drive/folders/18MGEgqg1wEAVY4GKO0qTPh5DW7QRcmT7?usp=sharing" ,
    },
    {
-      id: 4,
+      id: 12,
       Module: "informatique",
       imgUrl:  infoEMD,
       url: "https://drive.google.com/drive/folders/1HwdGflBrMfpqhibC1Ihq7U3aFHIVxavf?usp=sharing" ,
@@ -144,7 +142,7 @@ const DpSt = () => {
  }
 </ServicesWrapper2>
 <EmdT1>TD</EmdT1>
-<ServicesWrapper2>
+<ServicesWrapper3>
      {
       EMD.map((Module, index) => {
           return (
@@ -156,7 +154,7 @@ const DpSt = () => {
         </ExternalLink>
      )})
  }
-</ServicesWrapper2>
+</ServicesWrapper3>
 
   </div>
  </>

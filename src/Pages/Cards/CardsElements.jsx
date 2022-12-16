@@ -101,6 +101,27 @@ export const ServicesWrapper2 = styled.div`
       top:-290px;
   }
 `
+export const ServicesWrapper3 = styled.div`
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    position: relative;
+    top:300px;
+    left:-200px;
+    grid-gap: 100px;
+    padding: 0 30px;
+    @media screen and (max-width: 1000px) {
+      grid-template-columns: 1fr 1fr;
+  }
+    @media screen and (max-width: 786px) {
+      grid-template-columns: 1fr ;
+      padding: 0 10px;
+      left:0px;
+      top:-290px;
+  }
+`
 export const DepartementWarpper = styled.div`
     max-width: 1000px;
     margin: 0 auto;
