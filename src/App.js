@@ -1,5 +1,5 @@
 import './App.css';
-import {BrowserRouter as Router, Switch, Route} from  'react-router-dom';
+import {BrowserRouter as Router, Switch, Route } from  'react-router-dom';
 import Home from './Pages/index';
 import DpSt from './Pages/Dps/DpSt';
 import DpSh from './Pages/Dps/DpSh';
@@ -14,11 +14,18 @@ import DpGc from './Pages/Dps/DpGc';
 import NotFound from './Pages/NotFound';
 
 import ReactGA from "react-ga4";
+import useAckee from 'use-ackee';
 
 
 
 
 function App() {
+  useAckee(window.location.pathname, {
+		server: 'https://hergoanalytics.netlify.app/',
+		domainId: '249988e5-05e2-46ab-869d-7ec66e8859f7',
+	}, {
+		ignoreLocalhost: false,
+	})
   ReactGA.initialize("G-BELMLWG2S4");
   ReactGA.send("pageview");
   return (
