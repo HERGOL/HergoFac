@@ -14,7 +14,7 @@ import DpGc from './Pages/Dps/DpGc';
 import NotFound from './Pages/NotFound';
 
 import ReactGA from "react-ga4";
-import useAckee from 'use-ackee';
+
 
 
 
