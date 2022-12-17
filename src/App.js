@@ -13,9 +13,14 @@ import DpGc from './Pages/Dps/DpGc';
 
 import NotFound from './Pages/NotFound';
 
+import ReactGA from "react-ga4";
+
+
 
 
 function App() {
+  ReactGA.initialize("G-BELMLWG2S4");
+  ReactGA.send("pageview");
   return (
     <Router>
       <Switch>
