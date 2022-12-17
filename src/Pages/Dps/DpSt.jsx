@@ -1,6 +1,6 @@
 import React from 'react';
 import {NavBarDp} from '../../components/NavBarDp';
-import { ServicesCard , ServicesIcon , ServicesH2,ServicesWrapper,CoursT1,EmdT1 , ServicesWrapper2 ,ServicesWrapper3} from '../Cards/CardsElements';
+import { ServicesCard , ServicesIcon , ServicesH2,ServicesWrapper,CoursT1,EmdT1,TdT1 , ServicesWrapper2 ,ServicesWrapper3 , Btn1 ,BtnLink1 , Btn2,BtnLink2} from '../Cards/CardsElements';
 import math from "../../assets/img/mathS1.png";
 import physique from "../../assets/img/physiqueS1.png";
 import chimie from "../../assets/img/chimieS1.png";
@@ -112,7 +112,13 @@ const DpSt = () => {
 
   <div >
      <NavBarDp />
-     <CoursT1>Cours</CoursT1>
+     <Btn1>
+      <BtnLink1>&nbsp;&nbsp;&nbsp;S1&nbsp;&nbsp;&nbsp;</BtnLink1>
+     </Btn1>
+     <Btn2>
+      <BtnLink2>&nbsp;&nbsp;&nbsp;S2&nbsp;&nbsp;&nbsp;</BtnLink2>
+     </Btn2>
+     <CoursT1>Cours:</CoursT1>
      <ServicesWrapper>
      {
       Cours.map((Module, index) => {
@@ -141,7 +147,7 @@ const DpSt = () => {
      )})
  }
 </ServicesWrapper2>
-<EmdT1>TD</EmdT1>
+<TdT1>TD</TdT1>
 <ServicesWrapper3>
      {
       EMD.map((Module, index) => {
