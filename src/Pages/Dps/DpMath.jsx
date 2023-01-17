@@ -1,6 +1,6 @@
 import React from 'react';
 import {NavBarDp} from '../../components/NavBarDp';
-import { ServicesCard , ServicesIcon , ServicesH2,ServicesWrapper,CoursT1,EmdT1 , ServicesWrapper2} from '../Cards/CardsElements';
+import { ServicesCard , ServicesIcon , ServicesH2,ServicesWrapper,ServicesWrapper3,CoursT1,EmdT1,TdT1 , ServicesWrapper2,Btn1,BtnLink1,Btn2,BtnLink2} from '../Cards/CardsElements';
 import Analyse from "../../assets/img/Analyse.png";
 import physique from "../../assets/img/physiqueS1.png";
 import Algebre from "../../assets/img/Algebre.png";
@@ -108,8 +108,14 @@ const DpMath = () => {
   <>
 
   <div >
-     <NavBarDp />
-     <CoursT1>Cours</CoursT1>
+   <NavBarDp />
+    <Btn1>
+      <BtnLink1>&nbsp;&nbsp;&nbsp;S1&nbsp;&nbsp;&nbsp;</BtnLink1>
+     </Btn1>
+     <Btn2>
+      <BtnLink2>&nbsp;&nbsp;&nbsp;S2&nbsp;&nbsp;&nbsp;</BtnLink2>
+     </Btn2>
+     <CoursT1>Cours:</CoursT1>
      <ServicesWrapper>
      {
       Cours.map((Module, index) => {
@@ -138,10 +144,25 @@ const DpMath = () => {
      )})
  }
 </ServicesWrapper2>
+<TdT1>TD</TdT1>
+<ServicesWrapper3>
+     {
+      EMD.map((Module, index) => {
+          return (
+            <ExternalLink  href={Module.url} style={{ color: 'inherit', textDecoration: 'inherit' }} >
+        <ServicesCard  key={Module.id} >
+          <ServicesIcon src={Module.imgUrl}/>
+          <ServicesH2>{Module.Module}</ServicesH2>
+        </ServicesCard>
+        </ExternalLink>
+     )})
+ }
+</ServicesWrapper3>
 
   </div>
  </>
   )
 }
+
 
 export default DpMath
