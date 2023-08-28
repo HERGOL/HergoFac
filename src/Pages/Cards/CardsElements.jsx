@@ -75,7 +75,7 @@ export const EmdT1= styled.h1`
   color: #fff;
   position: absolute;
   left: 870px;
-  top: 1200px;
+  top: 270px;
   @media screen and (max-width: 480px) {
     font-size: 2rem;
     position: relative;
@@ -88,7 +88,7 @@ export const TdT1= styled.h1`
   color: #fff;
   position: absolute;
   left: 870px;
-  top: 1700px;
+  top: 270px;
   @media screen and (max-width: 480px) {
     font-size: 2rem;
     position: relative;
@@ -97,48 +97,48 @@ export const TdT1= styled.h1`
   }  
 `
 export const ServicesWrapper2 = styled.div`
-    max-width: 1000px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    align-items: center;
-    position: relative;
-    top:530px;
-    left:-200px;
-    grid-gap: 100px;
-    padding: 0 30px;
-    @media screen and (max-width: 1000px) {
-      grid-template-columns: 1fr 1fr;
-  }
-    @media screen and (max-width: 786px) {
-      max-width: 786px;
-      grid-template-columns: 1fr ;
-      grid-gap: 10px;
-      left:47px;
-      top:-290px;
-  }
+max-width: 1000px;
+margin: 0 auto;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+align-items: center;
+position: relative;
+top:330px;
+left:-200px;
+grid-gap: 100px;
+padding: 0 30px;
+@media screen and (max-width: 1000px) {
+  grid-template-columns: 1fr 1fr;
+}
+@media screen and (max-width: 786px) {
+  grid-template-columns: 1fr ;
+  max-width: 786px;
+  grid-gap: 10px;
+  left:47px;
+  top:200px;
+}
 `
 export const ServicesWrapper3 = styled.div`
-    max-width: 1000px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    align-items: center;
-    position: relative;
-    top:700px;
-    left:-200px;
-    grid-gap: 100px;
-    padding: 0 30px;
-    @media screen and (max-width: 1000px) {
-      grid-template-columns: 1fr 1fr;
-  }
-    @media screen and (max-width: 786px) {
-      grid-template-columns: 1fr ;
-      max-width: 786px;
-      grid-gap: 10px;
-      left:47px;
-      top:-290px;
-  }
+max-width: 1000px;
+margin: 0 auto;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+align-items: center;
+position: relative;
+top:330px;
+left:-200px;
+grid-gap: 100px;
+padding: 0 30px;
+@media screen and (max-width: 1000px) {
+  grid-template-columns: 1fr 1fr;
+}
+@media screen and (max-width: 786px) {
+  grid-template-columns: 1fr ;
+  max-width: 786px;
+  grid-gap: 10px;
+  left:47px;
+  top:200px;
+}
 `
 export const DepartementWarpper = styled.div`
     max-width: 1000px;
@@ -196,6 +196,8 @@ position: absolute;
 export const BtnLink2 = styled(LinkR)`
   border-radius: 50px;
   position: relative;
+  top: 200px;
+  left: 825px;
   background: #01bf71;
   white-space: nowrap;
   padding: 10px 22px;
@@ -226,6 +228,30 @@ position: absolute;
 export const BtnLink1 = styled(LinkR)`
   border-radius: 50px;
   position: relative;
+  top: 200px;
+  left: 750px;
+  background: #01bf71;
+  white-space: nowrap;
+  padding: 10px 22px;
+  color: #010606;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+    color: #010606;
+  } 
+  
+`
+export const BtnLink3 = styled(LinkR)`
+  border-radius: 50px;
+  position: relative;
+  top: 200px;
+  left: 900px;
   background: #01bf71;
   white-space: nowrap;
   padding: 10px 22px;

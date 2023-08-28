@@ -1,11 +1,5 @@
 import React from 'react';
 
-
-
-
-
-
-
 const NotFound = () => {
  return (
   // eslint-disable-next-line
