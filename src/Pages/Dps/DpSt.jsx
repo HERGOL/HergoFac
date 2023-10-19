@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavBarDp } from '../../components/NavBarDp';
 import {
   ServicesCard,
@@ -26,6 +26,10 @@ import { ExternalLink } from 'react-external-link';
 
 const DpSt = () => {
   const [currentTab, setCurrentTab] = useState('cours');
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [currentTab]);
 
   const Cours = [
     {
@@ -163,7 +167,7 @@ const DpSt = () => {
           <>
            <CoursT1>Cours:</CoursT1>
           <ServicesWrapper>
-            {filteredModules.map((Mo dule, index) => (
+            {filteredModules.map((Module, index) => (
               <ExternalLink href={Module.url} style={{ color: 'inherit', textDecoration: 'inherit' }}>
                 <ServicesCard key={Module.id}>
                   <ServicesIcon src={Module.imgUrl} />
